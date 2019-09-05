@@ -14,11 +14,17 @@ dependencies {
 
     implementation "com.github.gnosis.bivrost-kotlin:bivrost-solidity-types:$bivrost_version"
 
-    api "com.github.komputing.KEthereum:extensions:$kethereum_version"
-    api "com.github.komputing.KEthereum:model:$kethereum_version"
+    implementation "com.github.komputing.KEthereum:extensions:$kethereum_version"
+    implementation "com.github.komputing.KEthereum:model:$kethereum_version"
+    implementation "com.github.komputing.KEthereum:base58:$kethereum_version"
+    implementation "com.github.komputing.KEthereum:crypto:$kethereum_version"
+    implementation "com.github.komputing.KEthereum:crypto_impl_spongycastle:$kethereum_version"
+    implementation "com.github.komputing.KHex:extensions-jvm:$khex_version"
 
-    api "com.github.uport-project.kotlin-common:jsonrpc:$uport_kotlin_common_version"
-    api "com.github.uport-project.kotlin-common:signer-common:$uport_kotlin_common_version"
+    implementation "com.github.uport-project.kotlin-common:core:$uport_kotlin_common_version"
+    implementation "com.github.uport-project.kotlin-common:jsonrpc:$uport_kotlin_common_version"
+    implementation "com.github.uport-project.kotlin-common:signer-common:$uport_kotlin_common_version"
+
     api project(":universal-did")
 
     testImplementation "junit:junit:$junit_version"
